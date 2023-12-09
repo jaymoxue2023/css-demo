@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements/Classes Demo</title>
+    <style>
+        .hover-effect:hover {
+            color: aquamarine
+        }
+
+        .active-effect:active {
+            color: blueviolet
+        }
+
+        .first-child-effect p:first-child {
+            color: blue
+        }
+
+        .nth-child-effect p:nth-child(2) {
+            color: green
+        }
+
+        .before-effect::before {
+            content: "Before effect"
+        }
+
+        .after-effect::after {
+            content: "After effect"
+        }
+
+        .first-line-effect::first-line {
+            color: red;
+            font-size: 2rem;
+        }
+
+        .first-letter-effect::first-letter {
+            color: blue;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>:hover Pseudo-class</h2>
+    <div class="hover-effect">Hover over me</div>
+
+    <h2>:active Pseudo-class</h2>
+    <div>
+        <Button class="active-effect">Click me</Button>
+    </div>
+
+    <h2>:first-child Pseudo-class</h2>
+    <div class="first-child-effect">
+        <p>This is the first child paragraph</p>
+        <p>This is the second child paragraph</p>
+    </div>
+
+    <h2>:nth-child Pseudo-class</h2>
+    <div class="nth-child-effect">
+        <p>First child paragraph</p>
+        <p>Second child paragraph</p>
+    </div>
+
+    <h2>::before Pseudo-element</h2>
+    <div class="before-effect">This is a div</div>
+
+    <h2>::after Pseudo-element</h2>
+    <div class="after-effect">This is a div</div>
+
+    <h2>::first-line Pseudo-element</h2>
+    <p class="first-line-effect">This is a paragraph This is a paragraphThis is a paragraphThis is a paragraphThis is a
+        paragraphThis is a
+        paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is
+        a paragraph</p>
+
+    <h2>::first-letter Pseudo-element</h2>
+    <p class="first-letter-effect">This is a paragraph</p>
+</body>
+
+</html>

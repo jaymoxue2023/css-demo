@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Demo</title>
+    <style>
+        * {
+            font-size: 1.1rem;
+            /* color: blue; */
+        }
+
+        div {
+            color: crimson;
+        }
+
+        .example {
+            color: cadetblue;
+        }
+
+        #header {
+            color: yellowgreen;
+        }
+
+        input[type="text"] {
+            color: blue;
+        }
+
+        input[type="button"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Element Selector</h2>
+    <div>This is a div element styled by Element Selector.</div>
+
+    ------------------------------------------------------------------------------------------
+    <h2>Class Selector</h2>
+    <div class="example">This is a div element styled by Class Selector.</div>
+    <p class="example">This is a p element styled by Class Selector.</p>
+
+    ------------------------------------------------------------------------------------------
+    <h2>Id Selector</h2>
+    <div id="header">This is a div element styled by Id Selector.</div>
+
+    ------------------------------------------------------------------------------------------
+    <h2>Attribute Selector</h2>
+    <input type="text" value="Text input styled by Attribute Selector">
+    <input type="button" value="Button styled by Attribute Selector">
+
+</body>
+
+</html>

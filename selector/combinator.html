@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Demo</title>
+    <style>
+        .descendant-selector p {
+            color: crimson;
+        }
+
+        .child-selector>p {
+            color: cadetblue;
+        }
+
+        .adjacent-sibling-selector h3+p {
+            font-style: italic;
+        }
+
+        .general-sibling-selector h3~p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="descendant-selector">
+        <h2>Descendant Selector</h2>
+        <div>
+            <p>This is a paragraph.</p>
+        </div>
+        <p>This is another paragraph.</p>
+    </div>
+    ------------------------------------------------------------------------------------------
+    <div class="child-selector">
+        <h2>Child Selector</h2>
+        <div>
+            <p>This is a paragraph.</p>
+        </div>
+        <p>This is another paragraph.</p>
+    </div>
+    ------------------------------------------------------------------------------------------
+    <div class="adjacent-sibling-selector">
+        <h2>Adjacent Sibling Selector</h2>
+        <h3>This is h3 heading</h3>
+        <p>This paragraph is italic</p>
+        <p>This paragraph is not italic</p>
+    </div>
+
+    ------------------------------------------------------------------------------------------
+    <div class="general-sibling-selector">
+        <h2>General Sibling Selector</h2>
+        <h3>This is h3 heading</h3>
+        <p>This paragraph is italic</p>
+        <p>This paragraph is not italic</p>
+    </div>
+</body>
+
+</html>
