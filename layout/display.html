@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Demo</title>
+    <style>
+        div,
+        span {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 100px;
+            color: white;
+        }
+
+        .block {
+            display: block;
+            background-color: salmon;
+        }
+
+        .inline {
+            display: inline;
+            background-color: darkblue;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: goldenrod;
+        }
+
+        .none {
+            display: none;
+            background-color: slateblue;
+        }
+
+        .transform-block-to-inline {
+            display: inline;
+            background-color: teal;
+        }
+
+        .transform-inline-to-block {
+            display: block;
+            background-color: indigo;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Display: block</h2>
+    <div class="block">
+        block Element 1
+    </div>
+    <div class="block">
+        block Element 2
+    </div>
+    ------------------------------------------------------------------------------------------
+    <h2>Display: inline</h2>
+    <span class="inline">
+        inline Element 1
+    </span>
+    <span class="inline">
+        inline Element 2
+    </span>
+    <br>
+    <br>
+    ------------------------------------------------------------------------------------------
+
+    <h2>Display: inline-block</h2>
+    <span class="inline-block">
+        inline-block Element 1
+    </span>
+    <span class="inline-block">
+        inline-block Element 2
+    </span>
+    ------------------------------------------------------------------------------------------
+    <h2>Display: None</h2>
+    <span class="none">
+        element does not display
+    </span>
+    ------------------------------------------------------------------------------------------
+    <h2>Transform Block to Inline</h2>
+    <div class="transform-block-to-inline">This div becomes an inline element</div>
+    <div class="transform-block-to-inline">This div becomes an inline element</div>
+    <br>
+    <br>
+    ------------------------------------------------------------------------------------------
+    <h2>Transform Inline to Block</h2>
+    <span class="transform-inline-to-block">This span becomes a block element</span>
+    <span class="transform-inline-to-block">This span becomes a block element</span>
+</body>
+
+</html>

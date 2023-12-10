@@ -23,11 +23,11 @@
         }
 
         .before-effect::before {
-            content: "Before effect"
+            content: "::before content"
         }
 
         .after-effect::after {
-            content: "After effect"
+            content: "::after content"
         }
 
         .first-line-effect::first-line {
@@ -45,38 +45,42 @@
 <body>
     <h2>:hover Pseudo-class</h2>
     <div class="hover-effect">Hover over me</div>
-
+    ------------------------------------------------------------------------------------------
     <h2>:active Pseudo-class</h2>
     <div>
         <Button class="active-effect">Click me</Button>
     </div>
-
+    ------------------------------------------------------------------------------------------
     <h2>:first-child Pseudo-class</h2>
     <div class="first-child-effect">
         <p>This is the first child paragraph</p>
         <p>This is the second child paragraph</p>
     </div>
-
+    ------------------------------------------------------------------------------------------
     <h2>:nth-child Pseudo-class</h2>
     <div class="nth-child-effect">
         <p>First child paragraph</p>
         <p>Second child paragraph</p>
     </div>
-
+    ------------------------------------------------------------------------------------------
     <h2>::before Pseudo-element</h2>
-    <div class="before-effect">This is a div</div>
-
+    <div class="before-effect"> This is a div</div>
+    ------------------------------------------------------------------------------------------
     <h2>::after Pseudo-element</h2>
-    <div class="after-effect">This is a div</div>
-
+    <div class="after-effect">This is a div </div>
+    ------------------------------------------------------------------------------------------
     <h2>::first-line Pseudo-element</h2>
-    <p class="first-line-effect">This is a paragraph This is a paragraphThis is a paragraphThis is a paragraphThis is a
-        paragraphThis is a
-        paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is
-        a paragraph</p>
-
+    <p class="first-line-effect">
+        Magna tempor sint do ad est. Sunt officia do est sunt. Consequat dolore sit id duis proident duis anim ad
+        adipisicing exercitation fugiat irure excepteur. Ea excepteur elit exercitation veniam laboris et consequat duis
+        ullamco enim ut elit sunt aliqua. Commodo esse voluptate quis consequat minim. Officia sint minim commodo sit do
+        ea minim id non fugiat. Laboris aute in eu occaecat sint eiusmod adipisicing occaecat.
+    </p>
+    ------------------------------------------------------------------------------------------
     <h2>::first-letter Pseudo-element</h2>
-    <p class="first-letter-effect">This is a paragraph</p>
+    <p class="first-letter-effect">
+        Lorem culpa velit ullamco magna nulla.
+    </p>
 </body>
 
 </html>

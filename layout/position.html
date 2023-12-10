@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Demo</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        .static {
+            background-color: lightblue;
+        }
+
+        .relative {
+            position: relative;
+            background-color: lightsalmon;
+            top: 3.5rem;
+            left: 2rem;
+        }
+
+        .other-relative {
+            position: relative;
+            background-color: lightgreen;
+        }
+
+        .absolute-container {
+            position: relative;
+            background-color: lightgray;
+            height: 20vh;
+            width: 40vw;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+            background-color: lightcyan;
+        }
+
+        .other-absolute {
+            position: absolute;
+            background-color: lightpink;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: lightseagreen;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 2%;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Static Position</h2>
+    <div class="static">
+        Static Position
+    </div>
+    ------------------------------------------------------------------------------------------
+    <h2>Relative Position</h2>
+    <div class="other-relative">
+        Element above Relative
+    </div>
+    <div class="relative">
+        Relative Position
+    </div>
+    <div class="other-relative">
+        Element below Relative
+    </div>
+    ------------------------------------------------------------------------------------------
+    <h2>Absolute Position</h2>
+    <div class="absolute-container">
+        <div class="other-absolute">
+            Other Absolute Position
+        </div>
+        <div class="absolute">
+            Absolute Position
+        </div>
+    </div>
+
+    <h2>Fixed Position at Top Right Corner</h2>
+    <div class="fixed">Fixed Position</div>
+    ------------------------------------------------------------------------------------------
+    <h2>Sticky Position</h2>
+    <span class="sticky">Sticky Position</span>
+</body>
+
+</html>
