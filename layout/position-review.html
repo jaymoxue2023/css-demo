@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position Demo</title>
+    <link rel="stylesheet" href="../global.css">
+    <style>
+        .container {
+            position: relative;
+            border: 5px solid salmon;
+            width: 50rem;
+            height: 250vh;
+        }
+
+        .item {
+            border: 3px solid black;
+            width: 300px;
+            height: 100px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .static {
+            position: static;
+            /* margin-top: 10rem; */
+            /* top: 10rem; */
+            background-color: lightblue;
+        }
+
+        .relative {
+            position: relative;
+            top: 1rem;
+            left: 1rem;
+            background-color: lightgreen;
+            z-index: 1;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            background-color: lightpink;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background-color: lightyellow;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item static">Static Position (Default)</div>
+        <div class="item relative">Relative Position</div>
+        <div class="item absolute">Absolute Position</div>
+        <div class="item fixed">Fixed Position</div>
+        <div class="item sticky">Sticky Position</div>
+    </div>
+</body>
+
+</html>
