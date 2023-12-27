@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform, Transition & Animation Demo</title>
+    <link rel="stylesheet" href="../global.css">
+
+    <style>
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10rem;
+        }
+
+        /* Transform Example */
+        .transform-box {
+            font-size: var(--font-size);
+            width: 300px;
+            height: 300px;
+            background-color: var(--clr-accent);
+            color: var(--clr-light);
+            text-align: center;
+            /* transform: rotate(-90deg);
+            transform: scale(1.5);
+            transform: translateY(-20px);
+            transform: skew(45deg); */
+            /* transform: scale(1.2) translate(-200px) skew(20deg) rotate(180deg); */
+            transition: transform 2s;
+        }
+
+        .transform-box:hover {
+            transform: rotate(180deg) scale(1.2) translate(-200px) skew(20deg);
+
+        }
+
+        /* Transition Example */
+        .transition-button {
+            background-color: var(--clr-rgba);
+            color: var(--clr-accent);
+            font-size: var(--font-size);
+            padding: 0.5rem 1rem;
+            border: 0.6rem solid var(--clr-accent);
+            border-radius: 0.4rem;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out 3s;
+        }
+
+        .transition-button:hover {
+            background-color: var(--clr-light);
+        }
+
+        /* Animation Example */
+        @keyframes fadeInOut {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .animation-box {
+            width: 300px;
+            background-color: var(--clr-accent);
+            color: var(--clr-light);
+            padding: 10px;
+            text-align: center;
+            animation: fadeInOut 3s infinite;
+        }
+
+        /* @keyframes spinAndMove {
+            0% {
+                transform: rotate(0deg) translateX(0);
+            }
+
+            100% {
+                transform: rotate(360deg) translateX(100px);
+            }
+        }
+
+        .spin-move-box {
+            animation: spinAndMove 5s linear infinite;
+        } */
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- Transform Example -->
+        <div class="transform-box">Hover on me!</div>
+
+        <!-- Transition Example -->
+        <button class="transition-button">I am a button</button>
+
+        <!-- Animation Example -->
+        <div class="animation-box">Animating...</div>
+    </section>
+</body>
+
+</html>

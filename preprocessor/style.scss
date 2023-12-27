@@ -1,0 +1,92 @@
+$primary-color: #333333;
+$highlight-color: #4caf50;
+$nav-background: #f8f8f8;
+$link-hover-color: #008cba;
+$border-color: #dddddd;
+$space-large: 1.5rem;
+$space-small: 1rem;
+$shadow-color: rgba(0, 0, 0, 0.15);
+$border-radius: 1rem;
+
+body {
+  font-family: system-ui;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+@mixin flexbox(
+  $flex-direction: row,
+  $justify-content: start,
+  $align-items: stretch,
+  $gap: 2rem
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin card-style {
+  box-shadow: 0 4px 8px $shadow-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+%shared-link-style {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+nav {
+  background: $nav-background;
+  @include flexbox(row, start, center);
+  padding: 0 $space-small;
+
+  h1 {
+    margin-right: auto;
+  }
+
+  ul {
+    @include flexbox;
+    list-style: none;
+
+    a {
+      @extend %shared-link-style;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+section {
+  margin: 2rem auto;
+  @include flexbox(column);
+
+  article {
+    @include card-style;
+    border: 1px solid $border-color;
+    padding: $space-small * 2;
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+  }
+
+  .highlight {
+    background-color: $highlight-color;
+  }
+}

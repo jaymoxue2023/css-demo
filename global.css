@@ -2,19 +2,24 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+
+* {
+  font-family: system-ui;
 }
 
 :root {
-  --clr-dark: #03071e;
-  --clr-light: #f1f5f9;
-  --clr-accent: #fb8500;
+  --clr-dark: #070a12;
+  --clr-light: #f9f9fb;
+  --clr-accent: #f43f70;
+  --clr-rgba: rgba(244, 63, 112, 0.2);
+  --font-size: 1.2rem;
 }
 
 body {
-  margin-inline: auto;
-  line-height: 2;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
   word-spacing: 1.4px;
   color: var(--clr-dark);
   background-color: var(--clr-light);
@@ -23,15 +28,30 @@ body {
   padding: 2rem;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  gap: 2rem;
+}
+
 .container {
-  margin: 1rem 0;
+  margin-block: 1rem;
   border: 0.1rem solid var(--clr-accent);
   padding: 0.5rem;
   border-radius: 0.2rem;
+  /* height: 300px; */
 }
 
 .item {
   padding: 1rem;
   background-color: #ffb703;
+  font-weight: 700;
+  color: var(--clr-light);
   border: 0.5rem solid var(--clr-accent);
+  border-radius: 0.2rem;
+  /* text-align: center; */
 }
